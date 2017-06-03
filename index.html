@@ -1,0 +1,35 @@
+<!<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1">
+        <title>New York Times Search</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center"><i class="fa fa-newspaper-o"></i>Search the New York Times</h1>
+            </div>
+            <div class="row">  
+                <div class="panel">
+                    <h3 class="text-left"><i class="fa fa-newspaper-o"></i>Search Options</h3>
+                </div>
+            <div class="row">
+                <form>
+                    Search Term:<br>
+                    <input type="text" name="form" id="searchTerm"><br>
+                    Number of Records to Retrive:<br>
+                    <input type="text" name="form" id="numberRecords"><br>
+                    Start Year (optional):<br>
+                    <input type="text" name="form" id="startYear"><br>
+                    End Year:<br>
+                    <input type="text" name="form" id="endYear"><br>
+                </form>
+                <button type="search" class="btn btn-default" id="runSearch">Search</button>
+                <button type="clear" class="btn btn-default" id="clearAll">Clear All</button>
+        </div>
+    </body>
+</html> 
