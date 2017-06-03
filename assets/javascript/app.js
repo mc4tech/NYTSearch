@@ -7,8 +7,8 @@ $(document).ready(function() {
 		var numRecords = 0;
 		var startYear = 0;
 		var endYear = 0;
-		$("#runSearch").on("click", function(){
-		//THis is the ajax call to the nytimes api
+		var articleCounter = 0;
+
 		$.ajax({
 			url: queryURL,
 			method: "GET"
@@ -17,9 +17,12 @@ $(document).ready(function() {
 		.done(function(response){
 			//logs data response
 			console.log(response);
-
-
+			console.log("Url: "+ queryURL);
 		})
+
+		$("#runSearch").on("click", function(){
+
+			event.preventDefault();
 		
 	});
 
